@@ -1,0 +1,52 @@
+{
+    "name": "xpressengine-plugin/external_page",
+    "description": "XpressEngine's page plugin for bundle (XE)",
+    "keywords": [
+        "xpressengine bundle",
+        "XE External Page",
+        "Xpressengine3 page"
+    ],
+    "version": "0.1.0",
+    "authors": [
+        {
+            "name": "XE Team",
+            "email": "developers@xpressengine.com",
+            "homepage": "http://xpressengine.io",
+            "role": "Developer"
+        }
+    ],
+    "license": "LGPL",
+    "type": "xpressengine-plugin",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packagist.xpressengine.io"
+        }
+    ],
+    "extra": {
+        "xpressengine": {
+            "title": "ExternalPage",
+            "component": {
+                "module/externalPage@externalPage": {
+                    "class": "Xpressengine\\Plugins\\ExternalPage\\Module\\ExternalPage",
+                    "name": "External Page",
+                    "description": "include external file page",
+                    "screenshot": [
+                        "/plugins/external_page/assets/img/screenshots/external.png"
+                    ]
+                },
+                "module/externalPage@externalPage/skin/externalPage@default": {
+                    "class": "Xpressengine\\Plugins\\ExternalPage\\Skin\\DefaultUserSkin",
+                    "name": "ExternalPage Default Skin",
+                    "description": "Page Module Default Skin",
+                    "screenshot": []
+                }
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Xpressengine\\Plugins\\ExternalPage\\": "src/"
+        }
+    }
+}
