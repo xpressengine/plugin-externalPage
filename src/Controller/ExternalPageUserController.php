@@ -14,7 +14,7 @@
 namespace Xpressengine\Plugins\ExternalPage\Controller;
 
 use App\Http\Controllers\Controller;
-use Presenter;
+use XePresenter;
 use Xpressengine\Config\ConfigManager;
 use Xpressengine\Presenter\RendererInterface;
 use Xpressengine\Routing\InstanceConfig;
@@ -47,7 +47,7 @@ class ExternalPageUserController extends Controller
     public function __construct()
     {
         $this->configManager = app('xe.config');
-        Presenter::setSkin(ExternalPage::getId());
+        XePresenter::setSkin(ExternalPage::getId());
     }
 
     /**
@@ -64,7 +64,7 @@ class ExternalPageUserController extends Controller
 
         $includePath = $this->configManager->getVal($configName);
 
-        return Presenter::make('show', [
+        return XePresenter::make('show', [
             'includePath' => $includePath
         ]);
     }
