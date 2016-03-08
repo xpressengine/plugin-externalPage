@@ -13,7 +13,7 @@
  */
 namespace Xpressengine\Plugins\Page;
 
-use Cfg;
+use XeConfig;
 use Xpressengine\Plugin\AbstractPlugin;
 
 /**
@@ -47,8 +47,8 @@ class ExternalPagePlugin extends AbstractPlugin
      */
     public function activate($installedVersion = null)
     {
-        if (Cfg::get('module/externalPage@externalPage') === null) {
-            Cfg::add('module/externalPage@externalPage', []);
+        if (XeConfig::get('module/externalPage@externalPage') === null) {
+            XeConfig::add('module/externalPage@externalPage', []);
         }
     }
 
