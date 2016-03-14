@@ -47,7 +47,7 @@ class ExternalPageUserController extends Controller
     public function __construct()
     {
         $this->configManager = app('xe.config');
-        XePresenter::setModule(ExternalPage::getId());
+        XePresenter::setSkinTargtId(ExternalPage::getId());
     }
 
     /**
