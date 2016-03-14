@@ -63,7 +63,7 @@ class ExternalPagePlugin extends AbstractPlugin
     /**
      * @return boolean
      */
-    public function checkInstalled()
+    public function checkInstalled($installedVersion = null)
     {
         // TODO: Implement checkInstall() method.
 
@@ -73,7 +73,7 @@ class ExternalPagePlugin extends AbstractPlugin
     /**
      * @return boolean
      */
-    public function checkUpdated()
+    public function checkUpdated($currentVersion = null)
     {
         // TODO: Implement checkUpdate() method.
     }
