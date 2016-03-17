@@ -1,7 +1,7 @@
 <div class="panel menu_detail">
     <div class="panel-heading">
         <div class="row">
-            <p class="txt_tit">External Page Setting</p>
+            <p class="text-title">External Page Setting</p>
 
             <div class="right_btn">
                 <button class="ico_gray"><i class="xi-angle-down"></i><span class="blind">닫기</span></button>
@@ -10,7 +10,7 @@
     </div>
     <div class="panel-body">
         <div class="row_con">
-            <p class="txt_tit">File Location</p>
+            <p class="text-title">File Location</p>
 
             <div class="row">
                 <div class="col-sm-10">
