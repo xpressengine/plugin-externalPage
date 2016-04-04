@@ -232,4 +232,15 @@ class ExternalPage extends AbstractModule
     {
         return null;
     }
+
+    /**
+     * Get menu type's item object
+     *
+     * @param string $id item id of menu type
+     * @return mixed
+     */
+    public function getTypeItem($id)
+    {
+        return null;
+    }
 }
