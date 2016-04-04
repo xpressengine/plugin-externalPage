@@ -26,6 +26,7 @@
     "extra": {
         "xpressengine": {
             "title": "ExternalPage",
+            "icon": "icon.png",
             "component": {
                 "module/externalPage@externalPage": {
                     "class": "Xpressengine\\Plugins\\ExternalPage\\Module\\ExternalPage",
