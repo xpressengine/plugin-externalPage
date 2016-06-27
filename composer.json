@@ -17,12 +17,6 @@
     ],
     "license": "LGPL-2.1",
     "type": "xpressengine-plugin",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packagist.xpressengine.io"
-        }
-    ],
     "extra": {
         "xpressengine": {
             "title": "ExternalPage",
