@@ -94,7 +94,7 @@ class ExternalPage extends AbstractModule
         $config = $this->configManager->get(self::getId());
         $form = View::file(__DIR__ . '/../../views/menuType/menuCreate.blade.php', [
             'config' => $config,
-        ]);
+        ])->render();
         return $form;
     }
 
