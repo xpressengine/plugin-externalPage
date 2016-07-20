@@ -19,12 +19,12 @@
     "type": "xpressengine-plugin",
     "extra": {
         "xpressengine": {
-            "title": "ExternalPage",
+            "title": "External Page",
             "icon": "icon.png",
             "component": {
                 "module/externalPage@externalPage": {
                     "class": "Xpressengine\\Plugins\\ExternalPage\\Module\\ExternalPage",
-                    "name": "External Page",
+                    "name": "External Page Module",
                     "description": "include external file page",
                     "screenshot": [
                         "/plugins/external_page/assets/img/screenshots/external.png"

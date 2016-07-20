@@ -31,7 +31,7 @@ class ExternalPagePlugin extends AbstractPlugin
      */
     public function install()
     {
-//        XeLang::putFromLangDataSource(self::getId(), __DIR__.'/lang/lang.php');
+        XeConfig::add('module/externalPage@externalPage', []);
     }
 
     /**
@@ -43,35 +43,6 @@ class ExternalPagePlugin extends AbstractPlugin
      */
     public function activate($installedVersion = null)
     {
-        if (XeConfig::get('module/externalPage@externalPage') === null) {
-            XeConfig::add('module/externalPage@externalPage', []);
-        }
-    }
-
-    /**
-     * @return boolean
-     */
-    public function unInstall()
-    {
-        // TODO: Implement unInstall() method.
-    }
-
-    /**
-     * @return boolean
-     */
-    public function checkInstalled($installedVersion = null)
-    {
-        // TODO: Implement checkInstall() method.
-
-        return true;
-    }
-
-    /**
-     * @return boolean
-     */
-    public function checkUpdated($currentVersion = null)
-    {
-        // TODO: Implement checkUpdate() method.
     }
 
     /**
