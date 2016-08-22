@@ -13,8 +13,7 @@
 
 namespace Xpressengine\Plugins\ExternalPage\Module;
 
-use Xpressengine\Module\AbstractModule;
-
+use Xpressengine\Menu\AbstractModule;
 use View;
 use XeDB;
 use Xpressengine\Config\ConfigManager;
