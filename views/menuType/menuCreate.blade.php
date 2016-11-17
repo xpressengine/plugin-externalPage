@@ -9,7 +9,7 @@
             <p class="text-title">File Location</p>
 
             <dl>
-                <dd><input type="text" name="includePath" class="form-control" value=""
+                <dd><input type="text" name="includePath" class="form-control" value="{{Input::old('includePath')}}"
                  placeholder="포함시킬 PHP file의 경로를 지정해주세요({{ base_path() }}/ 이하의 경로)"/>
              </dd>
          </dl>
