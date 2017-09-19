@@ -11,7 +11,7 @@
 
                 <dl>
                     <dd><input type="text" name="includePath" class="form-control"
-                        value="{{Input::old('includePath', $config->get('includePath'))}}"
+                        value="{{Request::old('includePath', $config->get('includePath'))}}"
                         placeholder="포함시킬 PHP file의 경로를 지정해주세요({{ base_path() }}/ 이하의 경로)"/>
                     </dd>
                 </dl>
