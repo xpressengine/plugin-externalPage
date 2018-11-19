@@ -16,7 +16,7 @@ namespace Xpressengine\Plugins\ExternalPage\Controller;
 use App\Http\Controllers\Controller;
 use XePresenter;
 use Xpressengine\Config\ConfigManager;
-use Xpressengine\Presenter\RendererInterface;
+use Xpressengine\Presenter\Presentable;
 use Xpressengine\Routing\InstanceConfig;
 use Xpressengine\Plugins\ExternalPage\Module\ExternalPage;
 
@@ -49,7 +49,7 @@ class ExternalPageUserController extends Controller
     /**
      * index
      *
-     * @return RendererInterface
+     * @return Presentable
      */
     public function index()
     {
