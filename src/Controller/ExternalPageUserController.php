@@ -1,14 +1,17 @@
 <?php
 /**
- * ExternalPage User Controller
+ * ExternalPageUserController.php
  *
- * @category    Page
- * @package     Xpressengine\Plugins\ExternalPage\Controller
+ * This file is part of the Xpressengine package.
+ *
+ * PHP version 5
+ *
+ * @category    ExternalPage
+ * @package     Xpressengine\Plugins\ExternalPage
  * @author      XE Developers <developers@xpressengine.com>
- * @copyright   2015 Copyright (C) NAVER Corp. <http://www.navercorp.com>
- * @license     LGPL-2.1
- * @license     http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
- * @link        https://xpressengine.io
+ * @copyright   2015 Copyright (C) NAVER <http://www.navercorp.com>
+ * @license     http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html LGPL-2.1
+ * @link        http://www.xpressengine.com
  */
 
 namespace Xpressengine\Plugins\ExternalPage\Controller;
@@ -21,10 +24,14 @@ use Xpressengine\Routing\InstanceConfig;
 use Xpressengine\Plugins\ExternalPage\Module\ExternalPage;
 
 /**
- * ExternalPage User Controller
+ * ExternalPageUserController
  *
  * @category    ExternalPage
- * @package     Xpressengine\Plugins\ExternalPage\Controller
+ * @package     Xpressengine\Plugins\ExternalPage
+ * @author      XE Developers <developers@xpressengine.com>
+ * @copyright   2015 Copyright (C) NAVER <http://www.navercorp.com>
+ * @license     http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html LGPL-2.1
+ * @link        http://www.xpressengine.com
  */
 class ExternalPageUserController extends Controller
 {
@@ -65,6 +72,11 @@ class ExternalPageUserController extends Controller
         ]);
     }
 
+    /**
+     * @param string $instanceId instance id
+     *
+     * @return string
+     */
     protected function getConfigKeyString($instanceId)
     {
         return sprintf('%s.%s.%s', ExternalPage::getId(), $instanceId, 'includePath');

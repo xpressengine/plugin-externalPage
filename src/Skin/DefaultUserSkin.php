@@ -1,14 +1,17 @@
 <?php
 /**
- * ExternalPage user skin
+ * DefaultUserSkin.php
+ *
+ * This file is part of the Xpressengine package.
+ *
+ * PHP version 5
  *
  * @category    ExternalPage
  * @package     Xpressengine\Plugins\ExternalPage
  * @author      XE Developers <developers@xpressengine.com>
- * @copyright   2015 Copyright (C) NAVER Corp. <http://www.navercorp.com>
- * @license     LGPL-2.1
- * @license     http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
- * @link        https://xpressengine.io
+ * @copyright   2015 Copyright (C) NAVER <http://www.navercorp.com>
+ * @license     http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html LGPL-2.1
+ * @link        http://www.xpressengine.com
  */
 
 namespace Xpressengine\Plugins\ExternalPage\Skin;
@@ -17,10 +20,14 @@ use Xpressengine\Skin\AbstractSkin;
 use View;
 
 /**
- * ExternalPage user skin
+ * DefaultUserSkin
  *
  * @category    ExternalPage
  * @package     Xpressengine\Plugins\ExternalPage
+ * @author      XE Developers <developers@xpressengine.com>
+ * @copyright   2015 Copyright (C) NAVER <http://www.navercorp.com>
+ * @license     http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html LGPL-2.1
+ * @link        http://www.xpressengine.com
  */
 class DefaultUserSkin extends AbstractSkin
 {
@@ -49,7 +56,7 @@ class DefaultUserSkin extends AbstractSkin
     /**
      * getViewFilePath
      *
-     * @param $view
+     * @param string $view view file name
      *
      * @return string
      */

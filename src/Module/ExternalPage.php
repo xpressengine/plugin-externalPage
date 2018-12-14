@@ -1,14 +1,17 @@
 <?php
 /**
- * ExternalPage module
+ * ExternalPage.php
  *
- * @category    Page
+ * This file is part of the Xpressengine package.
+ *
+ * PHP version 5
+ *
+ * @category    ExternalPage
  * @package     Xpressengine\Plugins\ExternalPage
  * @author      XE Developers <developers@xpressengine.com>
- * @copyright   2015 Copyright (C) NAVER Corp. <http://www.navercorp.com>
- * @license     LGPL-2.1
- * @license     http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
- * @link        https://xpressengine.io
+ * @copyright   2015 Copyright (C) NAVER <http://www.navercorp.com>
+ * @license     http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html LGPL-2.1
+ * @link        http://www.xpressengine.com
  */
 
 namespace Xpressengine\Plugins\ExternalPage\Module;
@@ -21,10 +24,14 @@ use Xpressengine\Plugins\ExternalPage\FileFilter;
 use Route;
 
 /**
- * ExternalPage module class
+ * ExternalPage
  *
  * @category    ExternalPage
  * @package     Xpressengine\Plugins\ExternalPage
+ * @author      XE Developers <developers@xpressengine.com>
+ * @copyright   2015 Copyright (C) NAVER <http://www.navercorp.com>
+ * @license     http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html LGPL-2.1
+ * @link        http://www.xpressengine.com
  */
 class ExternalPage extends AbstractModule
 {
@@ -100,13 +107,13 @@ class ExternalPage extends AbstractModule
     /**
      * Process to Store
      *
-     * @param string $instanceId
-     * @param array  $menuTypeParams
-     * @param array  $itemParams
+     * @param string $instanceId     instance id
+     * @param array  $menuTypeParams menu type params
+     * @param array  $itemParams     item params
      *
-     * @return mixed
+     * @return void
      * @internal param $inputs
-     *
+     * @throws \Exception
      */
     public function storeMenu($instanceId, $menuTypeParams, $itemParams)
     {
@@ -119,7 +126,7 @@ class ExternalPage extends AbstractModule
     /**
      * Return Edit Form View
      *
-     * @param $instanceId
+     * @param string $instanceId instance id
      *
      * @return mixed
      */
@@ -164,7 +171,7 @@ class ExternalPage extends AbstractModule
     /**
      * Process to delete
      *
-     * @param $instanceId
+     * @param string $instanceId instance id
      *
      * @return mixed
      */
@@ -178,7 +185,7 @@ class ExternalPage extends AbstractModule
     /**
      * summary
      *
-     * @param string $instanceId
+     * @param string $instanceId instance id
      *
      * @return string
      */
@@ -190,7 +197,7 @@ class ExternalPage extends AbstractModule
     /**
      * getPageConfigKeyString
      *
-     * @param $instanceId
+     * @param string $instanceId instance id
      *
      * @return string
      */
@@ -202,7 +209,7 @@ class ExternalPage extends AbstractModule
     /**
      * checkFileSecurity
      *
-     * @param $filePath
+     * @param string $filePath file path
      *
      * @return void
      * @throws \Exception
@@ -219,7 +226,7 @@ class ExternalPage extends AbstractModule
      * Return URL about module's detail setting
      * getInstanceSettingURI
      *
-     * @param $instanceId
+     * @param string $instanceId instance id
      *
      * @return mixed
      */
@@ -232,6 +239,7 @@ class ExternalPage extends AbstractModule
      * Get menu type's item object
      *
      * @param string $id item id of menu type
+     *
      * @return mixed
      */
     public function getTypeItem($id)
