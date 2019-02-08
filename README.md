@@ -8,7 +8,7 @@
 
 이 플러그인은 XE3에서 파일을 페이지로 만드는 기능을 제공합니다.
 
-[![License](http://img.shields.io/badge/license-GNU%20LGPL-brightgreen.svg)]
+![License](http://img.shields.io/badge/license-GNU%20LGPL-brightgreen.svg)
 
 # Installation
 ### Console
