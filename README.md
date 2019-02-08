@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img src="https://raw.githubusercontent.com/xpressengine/plugin-board/master/icon.png">
+  <img src="https://raw.githubusercontent.com/xpressengine/plugin-external_page/master/icon.png">
  </p>
 
 # XE3 External page Plugin
