@@ -1,4 +1,9 @@
-# plugin-external_page
+<p align="center"> 
+  <img src="https://raw.githubusercontent.com/xpressengine/plugin-board/master/icon.png">
+ </p>
+
+# XE3 External page Plugin
+
 이 어플리케이션은 Xpressengine3(이하 XE3)의 플러그인입니다.
 
 이 플러그인은 XE3에서 파일을 페이지로 만드는 기능을 제공합니다.
