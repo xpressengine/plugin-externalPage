@@ -20,7 +20,7 @@ $ php artisan plugin:install external_page
 - 관리자 > 플러그인 & 업데이트 > 플러그인 목록 내에 새 플러그인 설치 버튼 클릭
 - `external_page` 검색 후 설치하기
 
-### Ftp upload
+### FTP upload
 - 다음의 페이지에서 다운로드
     * https://store.xpressengine.io/plugins/external_page
     * https://github.com/xpressengine/plugin-external_page/releases
