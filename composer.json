@@ -6,7 +6,7 @@
         "XE External Page",
         "Xpressengine3 page"
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "XE Developers",
@@ -15,7 +15,7 @@
             "role": "Developer"
         }
     ],
-    "license": "LGPL-2.1",
+    "license": "LGPL-3.0-or-later",
     "type": "xpressengine-plugin",
     "extra": {
         "xpressengine": {
